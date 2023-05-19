@@ -20,7 +20,7 @@ BURIQ () {
     done
     rm -f  /root/tmp
 }
-# https://raw.githubusercontent.com/xlord27/licensi/main/ipmini 
+# https://raw.githubusercontent.com/nurulimuttcah/licensi/main/ipmini 
 MYIP=$(curl -sS iplowq.icanhazip.com)
 Name=$(curl -sS https://raw.githubusercontent.com/nurulimuttcah/licensi/main/ipmini | grep $MYIP | awk '{print $2}')
 echo $Name > /usr/local/etc/.$Name.ini
@@ -184,7 +184,7 @@ mkdir -p /var/lib/SIJA >/dev/null 2>&1
 echo "IP=" >> /var/lib/SIJA/ipvps.conf
 
 echo ""
-wget -q https://raw.githubusercontent.com/xlord27/lowq/main/tools.sh;chmod +x tools.sh;./tools.sh
+wget -q https://raw.githubusercontent.com/nurulimuttcah/asu/main/tools.sh;chmod +x tools.sh;./tools.sh
 rm tools.sh
 clear
 yellow "Add Domain for vmess/vless/trojan dll"
